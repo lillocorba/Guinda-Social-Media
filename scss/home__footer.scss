@@ -1,0 +1,263 @@
+@import "variables.scss";
+
+.home__footer {
+    background-color: $blanco;
+    padding-top: 200px;
+    padding-bottom: 200px;
+}
+
+.home__footer__row {
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.home__footer__col1 {
+    text-align: center;
+}
+
+.home__footer__h3--branding {
+    font-family: $fuente;
+    font-style: italic;
+    color: transparent;
+    font-weight: bold;
+    display: block;
+    font-size: 3.5rem;
+    text-align: center;
+    -webkit-text-stroke: 1px $rojo;
+    margin-bottom: -20px;
+}
+
+.home__footer__h3--branding:hover {
+    font-family: $fuente;
+    font-style: italic;
+    color: $rojo;
+    font-weight: bold;
+    display: block;
+    font-size: 3.5rem;
+    text-align: center;
+    margin-bottom: -20px;
+}
+
+.home__footer__h3--performance {
+    font-family: $fuente;
+    font-style: italic;
+    color: $rojo;
+    font-weight: bold;
+    display: block;
+    font-size: 3.5rem;
+    text-align: center;
+    margin-bottom: -20px;
+}
+
+.home__footer__h3--webdesign {
+    font-family: $fuente;
+    font-style: italic;
+    color: transparent;
+    font-weight: bold;
+    display: block;
+    font-size: 3.5rem;
+    text-align: center;
+    -webkit-text-stroke: 1px $rojo;
+}
+
+.home__footer__h3--webdesign:hover {
+    font-family: $fuente;
+    font-style: italic;
+    color: $rojo;
+    font-weight: bold;
+    display: block;
+    font-size: 3.5rem;
+    text-align: center;
+}
+
+.home_footer_2020 {
+    background-color: $rojo;
+    padding-top: 50px;
+    padding-bottom: 40px;
+    text-align: center;
+}
+
+.home_footer_2020_h4 {
+    color: $blanco;
+    font-family: $fuente;
+    font-size: 1.2rem;
+} 
+
+/* MEDIA QUERIES */
+
+/* IPAD */
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .home__footer__h3--branding {
+        font-family: $fuente;
+        font-style: italic;
+        color: transparent;
+        font-weight: bold;
+        display: block;
+        font-size: 5rem;
+        text-align: center;
+        -webkit-text-stroke: 1px $rojo;
+        margin-bottom: -20px;
+    }
+    
+    .home__footer__h3--branding:hover {
+        font-family: $fuente;
+        font-style: italic;
+        color: $rojo;
+        font-weight: bold;
+        display: block;
+        font-size: 5rem;
+        text-align: center;
+        margin-bottom: -20px;
+    }
+    
+    .home__footer__h3--performance {
+        font-family: $fuente;
+        font-style: italic;
+        color: $rojo;
+        font-weight: bold;
+        display: block;
+        font-size: 5rem;
+        text-align: center;
+        margin-bottom: -20px;
+    }
+    
+    .home__footer__h3--webdesign {
+        font-family: $fuente;
+        font-style: italic;
+        color: transparent;
+        font-weight: bold;
+        display: block;
+        font-size: 5rem;
+        text-align: center;
+        -webkit-text-stroke: 1px $rojo;
+    }
+    
+    .home__footer__h3--webdesign:hover {
+        font-family: $fuente;
+        font-style: italic;
+        color: $rojo;
+        font-weight: bold;
+        display: block;
+        font-size: 5rem;
+        text-align: center;
+    }
+}
+
+/* COMPUTADORA */
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    .home__footer__h3--branding {
+        font-family: $fuente;
+        font-style: italic;
+        color: transparent;
+        font-weight: bold;
+        display: block;
+        font-size: 5rem;
+        text-align: center;
+        -webkit-text-stroke: 1px $rojo;
+        margin-bottom: -20px;
+    }
+    
+    .home__footer__h3--branding:hover {
+        font-family: $fuente;
+        font-style: italic;
+        color: $rojo;
+        font-weight: bold;
+        display: block;
+        font-size: 5rem;
+        text-align: center;
+        margin-bottom: -20px;
+    }
+    
+    .home__footer__h3--performance {
+        font-family: $fuente;
+        font-style: italic;
+        color: $rojo;
+        font-weight: bold;
+        display: block;
+        font-size: 5rem;
+        text-align: center;
+        margin-bottom: -20px;
+    }
+    
+    .home__footer__h3--webdesign {
+        font-family: $fuente;
+        font-style: italic;
+        color: transparent;
+        font-weight: bold;
+        display: block;
+        font-size: 5rem;
+        text-align: center;
+        -webkit-text-stroke: 1px $rojo;
+    }
+    
+    .home__footer__h3--webdesign:hover {
+        font-family: $fuente;
+        font-style: italic;
+        color: $rojo;
+        font-weight: bold;
+        display: block;
+        font-size: 5rem;
+        text-align: center;
+    }
+}
+
+/* COMPUTADORA GRANDE */
+
+@media (min-width: 1200px) {
+    .home__footer__h3--branding {
+        font-family: $fuente;
+        font-style: italic;
+        color: transparent;
+        font-weight: bold;
+        display: block;
+        font-size: 6rem;
+        text-align: center;
+        -webkit-text-stroke: 1px $rojo;
+        margin-bottom: -20px;
+    }
+    
+    .home__footer__h3--branding:hover {
+        font-family: $fuente;
+        font-style: italic;
+        color: $rojo;
+        font-weight: bold;
+        display: block;
+        font-size: 6rem;
+        text-align: center;
+        margin-bottom: -20px;
+    }
+    
+    .home__footer__h3--performance {
+        font-family: $fuente;
+        font-style: italic;
+        color: $rojo;
+        font-weight: bold;
+        display: block;
+        font-size: 6rem;
+        text-align: center;
+        margin-bottom: -20px;
+    }
+    
+    .home__footer__h3--webdesign {
+        font-family: $fuente;
+        font-style: italic;
+        color: transparent;
+        font-weight: bold;
+        display: block;
+        font-size: 6rem;
+        text-align: center;
+        -webkit-text-stroke: 1px $rojo;
+    }
+    
+    .home__footer__h3--webdesign:hover {
+        font-family: $fuente;
+        font-style: italic;
+        color: $rojo;
+        font-weight: bold;
+        display: block;
+        font-size: 6rem;
+        text-align: center;
+    }
+}

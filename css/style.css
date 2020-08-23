@@ -1,0 +1,1023 @@
+@charset "UTF-8";
+.scroll-icon {
+  display: block;
+  position: relative;
+  height: 3em;
+  width: 1.5em;
+  border: 0.25em solid #FE403F;
+  border-radius: 1em;
+  margin: auto; }
+
+@keyframes scroll_2 {
+  0% {
+    transform: translateY(0);
+    opacity: 1; }
+  25% {
+    opacity: 1; }
+  75% {
+    transform: translateY(0.75em);
+    opacity: 0; }
+  100% {
+    transform: translateY(0);
+    opacity: 0; } }
+
+.scroll-icon__dot {
+  display: block;
+  position: absolute;
+  left: 50%;
+  background: #FE403F;
+  height: .5em;
+  width: .5em;
+  top: .6em;
+  margin-left: -.25em;
+  border-radius: 50%;
+  transform-origin: top center;
+  backface-visibility: hidden;
+  animation: scroll_2 2s ease-out infinite; }
+
+/* COLORES */
+/* TIPOGRAFÍA */
+body {
+  font-size: 62,5%; }
+
+/* COLORES */
+/* TIPOGRAFÍA */
+body {
+  font-size: 62,5%; }
+
+/* BTN BURGER BLANCO */
+.menu-btn {
+  position: relative;
+  width: 80px;
+  height: 80px;
+  cursor: pointer;
+  transition: all .5s ease-in-out;
+  justify-content: center;
+  align-items: center;
+  padding-top: 50px;
+  padding-left: 50px; }
+
+.menu-btn__burger {
+  width: 25px;
+  height: 3px;
+  background-color: #FE403F;
+  border-radius: 5px;
+  transition: all 0.5s ease-in-out; }
+
+.menu-btn__burger::before, .menu-btn__burger::after {
+  content: '';
+  position: absolute;
+  width: 20px;
+  height: 3px;
+  background-color: #FE403F;
+  border-radius: 5px;
+  transition: all 0.5s ease-in-out; }
+
+.menu-btn__burger::before {
+  transform: translateY(-10px); }
+
+.menu-btn__burger::after {
+  transform: translateY(10px); }
+
+.menu-btn.open .menu-btn__burger {
+  transform: translateX(-50px);
+  background: transparent; }
+
+.menu-btn.open .menu-btn__burger::before {
+  transform: rotate(45deg) translate(35px, -35px); }
+
+.menu-btn.open .menu-btn__burger::after {
+  transform: rotate(-45deg) translate(35px, 35px); }
+
+/* FIN BTN BURGER BLANCO */
+.navbar-dark .navbar-toggler {
+  border: none; }
+
+.nav-link {
+  font-family: rift, sans-serif;
+  padding-top: 10px;
+  color: white;
+  text-align: center; }
+
+.navbar-nav {
+  background-color: none; }
+
+.buttonset {
+  padding-top: 30px;
+  padding-left: 30px; }
+
+.divLogo {
+  text-align: center; }
+
+.divEnlaces {
+  text-align: center; }
+
+.header__h4 {
+  font-family: rift, sans-serif;
+  font-weight: 500;
+  font-style: italic;
+  color: white; }
+
+.separadorMenu {
+  width: 70%;
+  border: dashed 1px #E8E8E8; }
+
+.fa-instagram {
+  margin-top: 20px; }
+
+/* General styles for all menus */
+.cbp-spmenu {
+  background-color: #FE403F;
+  padding-top: 50px;
+  padding-left: 20px;
+  position: fixed; }
+
+.cbp-spmenu a {
+  display: block;
+  color: white;
+  font-size: 1rem;
+  font-family: rift, sans-serif;
+  font-weight: 700;
+  font-style: italic;
+  font-weight: 500; }
+
+.cbp-spmenu a:hover {
+  color: #FADBD8;
+  text-decoration: none; }
+
+/* Orientation-dependent styles for the content of the menu */
+.cbp-spmenu-vertical {
+  width: 240px;
+  height: 100%;
+  top: 0;
+  z-index: 1000; }
+
+.cbp-spmenu-vertical a {
+  padding: 1em; }
+
+.cbp-spmenu-right {
+  right: -240px; }
+
+.cbp-spmenu-right.cbp-spmenu-open {
+  right: 0px; }
+
+/* Push classes applied to the body */
+.cbp-spmenu-push {
+  overflow-x: hidden;
+  position: relative;
+  left: 0; }
+
+.cbp-spmenu-push-toleft {
+  left: -240px; }
+
+/* Transitions */
+.cbp-spmenu,
+.cbp-spmenu-push {
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  transition: all 0.5s ease; }
+
+/* COLORES */
+/* TIPOGRAFÍA */
+body {
+  font-size: 62,5%; }
+
+.home__hero {
+  background-color: white;
+  padding-bottom: 50px; }
+
+.home__hero__col1 {
+  padding-top: 150px;
+  margin-top: auto;
+  margin-bottom: auto; }
+
+.home__hero__h1--social {
+  font-family: rift, sans-serif;
+  font-style: italic;
+  color: transparent;
+  font-weight: bold;
+  display: block;
+  font-size: 6.5rem;
+  text-align: center;
+  -webkit-text-stroke: 1px #FE403F;
+  opacity: 0.1; }
+
+.home__hero__h1--guinda {
+  font-family: rift, sans-serif;
+  font-style: italic;
+  color: #FE403F;
+  font-weight: bold;
+  display: block;
+  font-size: 6.5rem;
+  text-align: center;
+  margin-top: -100px;
+  margin-bottom: -100px; }
+
+.home__hero__h1--media {
+  font-family: rift, sans-serif;
+  font-style: italic;
+  color: transparent;
+  font-weight: bold;
+  display: block;
+  font-size: 6.5rem;
+  text-align: center;
+  -webkit-text-stroke: 1px #FE403F;
+  opacity: 0.1; }
+
+.home__hero__col2 {
+  padding-top: 250px; }
+
+/* MEDIA QUERIES */
+/* IPAD */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .home__hero__h1--social {
+    font-family: rift, sans-serif;
+    font-style: italic;
+    color: transparent;
+    font-weight: bold;
+    display: block;
+    font-size: 7rem;
+    text-align: center;
+    -webkit-text-stroke: 1px #FE403F;
+    opacity: 0.1; }
+  .home__hero__h1--guinda {
+    font-family: rift, sans-serif;
+    font-style: italic;
+    color: #FE403F;
+    font-weight: bold;
+    display: block;
+    font-size: 7rem;
+    text-align: center;
+    margin-top: -100px;
+    margin-bottom: -100px; }
+  .home__hero__h1--media {
+    font-family: rift, sans-serif;
+    font-style: italic;
+    color: transparent;
+    font-weight: bold;
+    display: block;
+    font-size: 7rem;
+    text-align: center;
+    -webkit-text-stroke: 1px #FE403F;
+    opacity: 0.1; } }
+
+/* COMPUTADORA */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .home__hero__h1--social {
+    font-family: rift, sans-serif;
+    font-style: italic;
+    color: transparent;
+    font-weight: bold;
+    display: block;
+    font-size: 8rem;
+    text-align: center;
+    -webkit-text-stroke: 1px #FE403F;
+    opacity: 0.1; }
+  .home__hero__h1--guinda {
+    font-family: rift, sans-serif;
+    font-style: italic;
+    color: #FE403F;
+    font-weight: bold;
+    display: block;
+    font-size: 8rem;
+    text-align: center;
+    margin-top: -100px;
+    margin-bottom: -100px; }
+  .home__hero__h1--media {
+    font-family: rift, sans-serif;
+    font-style: italic;
+    color: transparent;
+    font-weight: bold;
+    display: block;
+    font-size: 8rem;
+    text-align: center;
+    -webkit-text-stroke: 1px #FE403F;
+    opacity: 0.1; } }
+
+/* COMPUTADORA GRANDE */
+@media (min-width: 1200px) {
+  .home__hero__h1--social {
+    font-family: rift, sans-serif;
+    font-style: italic;
+    color: transparent;
+    font-weight: bold;
+    display: block;
+    font-size: 9rem;
+    text-align: center;
+    -webkit-text-stroke: 1px #FE403F;
+    opacity: 0.1; }
+  .home__hero__h1--guinda {
+    font-family: rift, sans-serif;
+    font-style: italic;
+    color: #FE403F;
+    font-weight: bold;
+    display: block;
+    font-size: 9rem;
+    text-align: center;
+    margin-top: -100px;
+    margin-bottom: -100px; }
+  .home__hero__h1--media {
+    font-family: rift, sans-serif;
+    font-style: italic;
+    color: transparent;
+    font-weight: bold;
+    display: block;
+    font-size: 9rem;
+    text-align: center;
+    -webkit-text-stroke: 1px #FE403F;
+    opacity: 0.1; } }
+
+/* COLORES */
+/* TIPOGRAFÍA */
+body {
+  font-size: 62,5%; }
+
+.home__about {
+  background-color: #FE403F;
+  padding: 200px 50px 200px 50px !important; }
+
+.home__about__col1 {
+  margin-bottom: 30px; }
+
+.home__about__h2--01 {
+  font-family: rift, sans-serif;
+  font-size: 4rem;
+  font-weight: bold;
+  font-style: italic;
+  color: white;
+  margin-bottom: -20px; }
+
+.home__about__h2--about {
+  font-family: rift, sans-serif;
+  font-size: 4rem;
+  font-weight: bold;
+  font-style: italic;
+  color: transparent;
+  -webkit-text-stroke: 1px white; }
+
+.home__about__p {
+  font-family: rift, sans-serif;
+  color: white;
+  font-size: 1.2rem;
+  font-weight: 300;
+  font-style: italic;
+  letter-spacing: 1px; }
+
+.home__about__h3 {
+  font-family: rift, sans-serif;
+  color: white;
+  font-size: 1.6rem;
+  font-weight: 700;
+  font-style: italic;
+  letter-spacing: 1px;
+  margin-top: 40px; }
+
+/* MEDIA QUERIES */
+/* IPAD */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .home__about {
+    background-color: #FE403F;
+    padding: 200px 75px 200px 50px !important; }
+  .home__about__h2--01 {
+    font-family: rift, sans-serif;
+    font-size: 4.5rem;
+    font-weight: bold;
+    font-style: italic;
+    color: white;
+    margin-bottom: -20px;
+    text-align: right; }
+  .home__about__h2--about {
+    font-family: rift, sans-serif;
+    font-size: 4.5rem;
+    font-weight: bold;
+    font-style: italic;
+    color: transparent;
+    -webkit-text-stroke: 1px white;
+    text-align: right; }
+  .home__about__col1 {
+    margin-right: 75px; }
+  .home__about__p {
+    font-family: rift, sans-serif;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 300;
+    font-style: italic;
+    letter-spacing: 1px;
+    text-align: left; }
+  .home__about__h3 {
+    font-family: rift, sans-serif;
+    color: white;
+    font-size: 2rem;
+    font-weight: 700;
+    font-style: italic;
+    letter-spacing: 1px;
+    margin-top: 40px;
+    text-align: left; } }
+
+/* COMPUTADORA CHICA */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .home__about {
+    background-color: #FE403F;
+    padding: 200px 75px 200px 50px !important; }
+  .home__about__h2--01 {
+    font-family: rift, sans-serif;
+    font-size: 4.5rem;
+    font-weight: bold;
+    font-style: italic;
+    color: white;
+    margin-bottom: -20px;
+    text-align: right; }
+  .home__about__h2--about {
+    font-family: rift, sans-serif;
+    font-size: 4.5rem;
+    font-weight: bold;
+    font-style: italic;
+    color: transparent;
+    -webkit-text-stroke: 1px white;
+    text-align: right; }
+  .home__about__col1 {
+    margin-right: 75px; }
+  .home__about__p {
+    font-family: rift, sans-serif;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 300;
+    font-style: italic;
+    letter-spacing: 1px;
+    text-align: left; }
+  .home__about__h3 {
+    font-family: rift, sans-serif;
+    color: white;
+    font-size: 2rem;
+    font-weight: 700;
+    font-style: italic;
+    letter-spacing: 1px;
+    margin-top: 40px;
+    text-align: left; } }
+
+/* COMPUTADORA GRANDE */
+@media (min-width: 1200px) {
+  .home__about {
+    background-color: #FE403F;
+    padding: 200px 75px 200px 50px !important; }
+  .home__about__h2--01 {
+    font-family: rift, sans-serif;
+    font-size: 5rem;
+    font-weight: bold;
+    font-style: italic;
+    color: white;
+    margin-bottom: -20px;
+    text-align: right; }
+  .home__about__h2--about {
+    font-family: rift, sans-serif;
+    font-size: 5rem;
+    font-weight: bold;
+    font-style: italic;
+    color: transparent;
+    -webkit-text-stroke: 1px white;
+    text-align: right; }
+  .home__about__col1 {
+    margin-right: 75px;
+    margin-top: auto;
+    margin-bottom: auto; }
+  .home__about__p {
+    font-family: rift, sans-serif;
+    color: white;
+    font-size: 1.4rem;
+    font-weight: 300;
+    font-style: italic;
+    letter-spacing: 1px;
+    text-align: left; }
+  .home__about__h3 {
+    font-family: rift, sans-serif;
+    color: white;
+    font-size: 2.5rem;
+    font-weight: 700;
+    font-style: italic;
+    letter-spacing: 1px;
+    margin-top: 40px;
+    text-align: left; } }
+
+/* COLORES */
+/* TIPOGRAFÍA */
+body {
+  font-size: 62,5%; }
+
+.home__trabajos {
+  background-color: white;
+  padding: 200px 50px 200px 50px !important; }
+
+.home__trabajos__col1 {
+  margin-bottom: 30px;
+  text-align: right; }
+
+.home__trabajos__h2--02 {
+  font-family: rift, sans-serif;
+  font-size: 4rem;
+  font-weight: bold;
+  font-style: italic;
+  color: #FE403F;
+  margin-bottom: -20px; }
+
+.home__trabajos__h2--trabajos {
+  font-family: rift, sans-serif;
+  font-size: 4rem;
+  font-weight: bold;
+  font-style: italic;
+  color: transparent;
+  -webkit-text-stroke: 1px #FE403F; }
+
+.home__trabajos__row {
+  margin-bottom: 30px; }
+
+/* PORTFOLIO */
+.home__trabajos__col2 {
+  padding: 0px;
+  margin: 0px;
+  text-align: left; }
+
+.home__trabajos__col2--seccion1 {
+  margin-bottom: 40px; }
+
+.home__trabajos__col2--seccion2 {
+  margin-bottom: 40px; }
+
+.imgTumenuonline {
+  width: 100%; }
+
+.home__trabajos__h3--portfolio {
+  font-family: rift, sans-serif;
+  font-size: 2rem;
+  font-weight: bold;
+  font-style: italic;
+  color: #676767;
+  margin-top: 20px;
+  margin-bottom: -5px; }
+
+.home__trabajos__p--portfolio {
+  font-family: rift, sans-serif;
+  font-size: 1.2rem;
+  font-weight: 500;
+  font-style: italic;
+  color: #676767; }
+
+/* FIN PORTFOLIO */
+.home__trabajos--logos {
+  height: 100px;
+  width: auto; }
+
+/* MEDIA QUERIES */
+/* IPAD */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .home__trabajos__col1 {
+    text-align: right; }
+  .home__trabajos__h2--02 {
+    font-family: rift, sans-serif;
+    font-size: 4.5rem;
+    font-weight: bold;
+    font-style: italic;
+    color: #FE403F;
+    margin-bottom: -20px; }
+  .home__trabajos__h2--trabajos {
+    font-family: rift, sans-serif;
+    font-size: 4.5rem;
+    font-weight: bold;
+    font-style: italic;
+    color: transparent;
+    -webkit-text-stroke: 1px #FE403F; } }
+
+/* COMPUTADORA */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .home__trabajos {
+    background-color: white;
+    padding: 100px 50px 100px 50px !important; }
+  .home__trabajos__col1 {
+    text-align: right; }
+  .home__trabajos__h2--02 {
+    font-family: rift, sans-serif;
+    font-size: 4.5rem;
+    font-weight: bold;
+    font-style: italic;
+    color: #FE403F;
+    margin-bottom: -20px; }
+  .home__trabajos__h2--trabajos {
+    font-family: rift, sans-serif;
+    font-size: 4.5rem;
+    font-weight: bold;
+    font-style: italic;
+    color: transparent;
+    -webkit-text-stroke: 1px #FE403F; } }
+
+/* COMPUTADORA GRANDE */
+@media (min-width: 1200px) {
+  .home__trabajos {
+    background-color: white;
+    padding: 100px 50px 100px 50px !important; }
+  .home__trabajos__col1 {
+    padding-right: 200px;
+    text-align: right;
+    padding-top: 50px; }
+  .home__trabajos__h2--02 {
+    font-family: rift, sans-serif;
+    font-size: 5rem;
+    font-weight: bold;
+    font-style: italic;
+    color: #FE403F;
+    margin-bottom: -20px; }
+  .home__trabajos__h2--trabajos {
+    font-family: rift, sans-serif;
+    font-size: 5rem;
+    font-weight: bold;
+    font-style: italic;
+    color: transparent;
+    -webkit-text-stroke: 1px #FE403F; } }
+
+/* COLORES */
+/* TIPOGRAFÍA */
+body {
+  font-size: 62,5%; }
+
+.home__contacto {
+  background-color: #FE403F;
+  padding: 200px 50px 200px 50px !important; }
+
+.home__contacto__col1 {
+  margin-bottom: 20px; }
+
+.home__contacto__h2--02 {
+  font-family: rift, sans-serif;
+  font-size: 4rem;
+  font-weight: bold;
+  font-style: italic;
+  color: white;
+  margin-bottom: -20px; }
+
+.home__contacto__h2--contacto {
+  font-family: rift, sans-serif;
+  font-size: 4rem;
+  font-weight: bold;
+  font-style: italic;
+  color: transparent;
+  -webkit-text-stroke: 1px white; }
+
+.home__contacto__parrafo {
+  font-family: rift, sans-serif;
+  color: white;
+  font-style: italic;
+  text-align: left;
+  font-size: 1rem; }
+
+.home__contacto__input {
+  border: solid 1px white;
+  border-radius: 100px;
+  background-color: transparent;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 20px;
+  width: 90%;
+  margin-bottom: 10px;
+  color: white;
+  font-family: rift, sans-serif;
+  font-size: 1rem;
+  font-style: italic; }
+
+.home__contacto__input::placeholder {
+  font-family: rift, sans-serif;
+  font-size: 1rem;
+  font-style: italic;
+  color: white; }
+
+.home__contacto__mensaje {
+  border: solid 1px white;
+  border-radius: 20px;
+  background-color: transparent;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 20px;
+  width: 90%;
+  margin-bottom: 10px;
+  color: white;
+  font-family: rift, sans-serif;
+  font-size: 1rem;
+  font-style: italic; }
+
+.home__contacto__mensaje::placeholder {
+  font-family: rift, sans-serif;
+  font-size: 1rem;
+  font-style: italic;
+  color: white; }
+
+#home__contacto__boton {
+  color: white;
+  background-color: transparent;
+  border: solid 1px white;
+  width: 100px;
+  border-radius: 100px; }
+
+/* MEDIA QUERIES */
+/* IPAD */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .home__contacto__col1 {
+    margin-right: 75px; }
+  .home__contacto__h2--02 {
+    font-family: rift, sans-serif;
+    font-size: 4.5rem;
+    font-weight: bold;
+    font-style: italic;
+    color: white;
+    margin-bottom: -20px;
+    text-align: right; }
+  .home__contacto__h2--contacto {
+    font-family: rift, sans-serif;
+    font-size: 4.5rem;
+    font-weight: bold;
+    font-style: italic;
+    color: transparent;
+    -webkit-text-stroke: 1px white;
+    text-align: right; }
+  .home__contacto__parrafo {
+    font-family: rift, sans-serif;
+    color: white;
+    font-style: italic;
+    text-align: right;
+    font-size: 1rem; } }
+
+/* COMPUTADORA */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .home__contacto__col1 {
+    margin-right: 75px; }
+  .home__contacto__h2--02 {
+    font-family: rift, sans-serif;
+    font-size: 4.5rem;
+    font-weight: bold;
+    font-style: italic;
+    color: white;
+    margin-bottom: -20px;
+    text-align: right; }
+  .home__contacto__h2--contacto {
+    font-family: rift, sans-serif;
+    font-size: 4.5rem;
+    font-weight: bold;
+    font-style: italic;
+    color: transparent;
+    -webkit-text-stroke: 1px white;
+    text-align: right; }
+  .home__contacto__parrafo {
+    font-family: rift, sans-serif;
+    color: white;
+    font-style: italic;
+    text-align: right;
+    font-size: 1rem; } }
+
+/* COMPUTADORA GRANDE */
+@media (min-width: 1200px) {
+  .home__contacto__col1 {
+    margin-right: 100px; }
+  .home__contacto__h2--02 {
+    font-family: rift, sans-serif;
+    font-size: 5rem;
+    font-weight: bold;
+    font-style: italic;
+    color: white;
+    margin-bottom: -20px;
+    text-align: right; }
+  .home__contacto__h2--contacto {
+    font-family: rift, sans-serif;
+    font-size: 5rem;
+    font-weight: bold;
+    font-style: italic;
+    color: transparent;
+    -webkit-text-stroke: 1px white;
+    text-align: right; }
+  .home__contacto__parrafo {
+    font-family: rift, sans-serif;
+    color: white;
+    font-style: italic;
+    text-align: right;
+    font-size: 1.2rem; } }
+
+/* COLORES */
+/* TIPOGRAFÍA */
+body {
+  font-size: 62,5%; }
+
+.home__footer {
+  background-color: white;
+  padding-top: 200px;
+  padding-bottom: 200px; }
+
+.home__footer__row {
+  margin-left: 50px;
+  margin-right: 50px; }
+
+.home__footer__col1 {
+  text-align: center; }
+
+.home__footer__h3--branding {
+  font-family: rift, sans-serif;
+  font-style: italic;
+  color: transparent;
+  font-weight: bold;
+  display: block;
+  font-size: 3.5rem;
+  text-align: center;
+  -webkit-text-stroke: 1px #FE403F;
+  margin-bottom: -20px; }
+
+.home__footer__h3--branding:hover {
+  font-family: rift, sans-serif;
+  font-style: italic;
+  color: #FE403F;
+  font-weight: bold;
+  display: block;
+  font-size: 3.5rem;
+  text-align: center;
+  margin-bottom: -20px; }
+
+.home__footer__h3--performance {
+  font-family: rift, sans-serif;
+  font-style: italic;
+  color: #FE403F;
+  font-weight: bold;
+  display: block;
+  font-size: 3.5rem;
+  text-align: center;
+  margin-bottom: -20px; }
+
+.home__footer__h3--webdesign {
+  font-family: rift, sans-serif;
+  font-style: italic;
+  color: transparent;
+  font-weight: bold;
+  display: block;
+  font-size: 3.5rem;
+  text-align: center;
+  -webkit-text-stroke: 1px #FE403F; }
+
+.home__footer__h3--webdesign:hover {
+  font-family: rift, sans-serif;
+  font-style: italic;
+  color: #FE403F;
+  font-weight: bold;
+  display: block;
+  font-size: 3.5rem;
+  text-align: center; }
+
+.home_footer_2020 {
+  background-color: #FE403F;
+  padding-top: 50px;
+  padding-bottom: 40px;
+  text-align: center; }
+
+.home_footer_2020_h4 {
+  color: white;
+  font-family: rift, sans-serif;
+  font-size: 1.2rem; }
+
+/* MEDIA QUERIES */
+/* IPAD */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .home__footer__h3--branding {
+    font-family: rift, sans-serif;
+    font-style: italic;
+    color: transparent;
+    font-weight: bold;
+    display: block;
+    font-size: 5rem;
+    text-align: center;
+    -webkit-text-stroke: 1px #FE403F;
+    margin-bottom: -20px; }
+  .home__footer__h3--branding:hover {
+    font-family: rift, sans-serif;
+    font-style: italic;
+    color: #FE403F;
+    font-weight: bold;
+    display: block;
+    font-size: 5rem;
+    text-align: center;
+    margin-bottom: -20px; }
+  .home__footer__h3--performance {
+    font-family: rift, sans-serif;
+    font-style: italic;
+    color: #FE403F;
+    font-weight: bold;
+    display: block;
+    font-size: 5rem;
+    text-align: center;
+    margin-bottom: -20px; }
+  .home__footer__h3--webdesign {
+    font-family: rift, sans-serif;
+    font-style: italic;
+    color: transparent;
+    font-weight: bold;
+    display: block;
+    font-size: 5rem;
+    text-align: center;
+    -webkit-text-stroke: 1px #FE403F; }
+  .home__footer__h3--webdesign:hover {
+    font-family: rift, sans-serif;
+    font-style: italic;
+    color: #FE403F;
+    font-weight: bold;
+    display: block;
+    font-size: 5rem;
+    text-align: center; } }
+
+/* COMPUTADORA */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .home__footer__h3--branding {
+    font-family: rift, sans-serif;
+    font-style: italic;
+    color: transparent;
+    font-weight: bold;
+    display: block;
+    font-size: 5rem;
+    text-align: center;
+    -webkit-text-stroke: 1px #FE403F;
+    margin-bottom: -20px; }
+  .home__footer__h3--branding:hover {
+    font-family: rift, sans-serif;
+    font-style: italic;
+    color: #FE403F;
+    font-weight: bold;
+    display: block;
+    font-size: 5rem;
+    text-align: center;
+    margin-bottom: -20px; }
+  .home__footer__h3--performance {
+    font-family: rift, sans-serif;
+    font-style: italic;
+    color: #FE403F;
+    font-weight: bold;
+    display: block;
+    font-size: 5rem;
+    text-align: center;
+    margin-bottom: -20px; }
+  .home__footer__h3--webdesign {
+    font-family: rift, sans-serif;
+    font-style: italic;
+    color: transparent;
+    font-weight: bold;
+    display: block;
+    font-size: 5rem;
+    text-align: center;
+    -webkit-text-stroke: 1px #FE403F; }
+  .home__footer__h3--webdesign:hover {
+    font-family: rift, sans-serif;
+    font-style: italic;
+    color: #FE403F;
+    font-weight: bold;
+    display: block;
+    font-size: 5rem;
+    text-align: center; } }
+
+/* COMPUTADORA GRANDE */
+@media (min-width: 1200px) {
+  .home__footer__h3--branding {
+    font-family: rift, sans-serif;
+    font-style: italic;
+    color: transparent;
+    font-weight: bold;
+    display: block;
+    font-size: 6rem;
+    text-align: center;
+    -webkit-text-stroke: 1px #FE403F;
+    margin-bottom: -20px; }
+  .home__footer__h3--branding:hover {
+    font-family: rift, sans-serif;
+    font-style: italic;
+    color: #FE403F;
+    font-weight: bold;
+    display: block;
+    font-size: 6rem;
+    text-align: center;
+    margin-bottom: -20px; }
+  .home__footer__h3--performance {
+    font-family: rift, sans-serif;
+    font-style: italic;
+    color: #FE403F;
+    font-weight: bold;
+    display: block;
+    font-size: 6rem;
+    text-align: center;
+    margin-bottom: -20px; }
+  .home__footer__h3--webdesign {
+    font-family: rift, sans-serif;
+    font-style: italic;
+    color: transparent;
+    font-weight: bold;
+    display: block;
+    font-size: 6rem;
+    text-align: center;
+    -webkit-text-stroke: 1px #FE403F; }
+  .home__footer__h3--webdesign:hover {
+    font-family: rift, sans-serif;
+    font-style: italic;
+    color: #FE403F;
+    font-weight: bold;
+    display: block;
+    font-size: 6rem;
+    text-align: center; } }
+
+body {
+  box-sizing: border-box; }

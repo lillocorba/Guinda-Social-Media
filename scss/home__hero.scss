@@ -1,0 +1,174 @@
+@import "variables.scss";
+
+.home__hero {
+    background-color: $blanco;
+    padding-bottom: 50px;
+}
+
+.home__hero__col1 {
+    padding-top: 150px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.home__hero__h1--social {
+    font-family: $fuente;
+    font-style: italic;
+    color: transparent;
+    font-weight: bold;
+    display: block;
+    font-size: 6.5rem;
+    text-align: center;
+    -webkit-text-stroke: 1px $rojo;
+    opacity: 0.1;
+}
+
+.home__hero__h1--guinda {
+    font-family: $fuente;
+    font-style: italic;
+    color: $rojo;
+    font-weight: bold;
+    display: block;
+    font-size: 6.5rem;
+    text-align: center;
+    margin-top: -100px;
+    margin-bottom: -100px;
+}
+
+.home__hero__h1--media {
+    font-family: $fuente;
+    font-style: italic;
+    color: transparent;
+    font-weight: bold;
+    display: block;
+    font-size: 6.5rem;
+    text-align: center;
+    -webkit-text-stroke: 1px $rojo;
+    opacity: 0.1;
+}
+
+.home__hero__col2 {
+    padding-top: 250px;
+}
+
+/* MEDIA QUERIES */
+
+/* IPAD */
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .home__hero__h1--social {
+        font-family: $fuente;
+        font-style: italic;
+        color: transparent;
+        font-weight: bold;
+        display: block;
+        font-size: 7rem;
+        text-align: center;
+        -webkit-text-stroke: 1px $rojo;
+        opacity: 0.1;
+    }
+    
+    .home__hero__h1--guinda {
+        font-family: $fuente;
+        font-style: italic;
+        color: $rojo;
+        font-weight: bold;
+        display: block;
+        font-size: 7rem;
+        text-align: center;
+        margin-top: -100px;
+        margin-bottom: -100px;
+    }
+    
+    .home__hero__h1--media {
+        font-family: $fuente;
+        font-style: italic;
+        color: transparent;
+        font-weight: bold;
+        display: block;
+        font-size: 7rem;
+        text-align: center;
+        -webkit-text-stroke: 1px $rojo;
+        opacity: 0.1;
+    }
+}
+
+/* COMPUTADORA */
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    .home__hero__h1--social {
+        font-family: $fuente;
+        font-style: italic;
+        color: transparent;
+        font-weight: bold;
+        display: block;
+        font-size: 8rem;
+        text-align: center;
+        -webkit-text-stroke: 1px $rojo;
+        opacity: 0.1;
+    }
+    
+    .home__hero__h1--guinda {
+        font-family: $fuente;
+        font-style: italic;
+        color: $rojo;
+        font-weight: bold;
+        display: block;
+        font-size: 8rem;
+        text-align: center;
+        margin-top: -100px;
+        margin-bottom: -100px;
+    }
+    
+    .home__hero__h1--media {
+        font-family: $fuente;
+        font-style: italic;
+        color: transparent;
+        font-weight: bold;
+        display: block;
+        font-size: 8rem;
+        text-align: center;
+        -webkit-text-stroke: 1px $rojo;
+        opacity: 0.1;
+    }
+}
+
+/* COMPUTADORA GRANDE */
+
+@media (min-width: 1200px) {
+    .home__hero__h1--social {
+        font-family: $fuente;
+        font-style: italic;
+        color: transparent;
+        font-weight: bold;
+        display: block;
+        font-size: 9rem;
+        text-align: center;
+        -webkit-text-stroke: 1px $rojo;
+        opacity: 0.1;
+    }
+    
+    .home__hero__h1--guinda {
+        font-family: $fuente;
+        font-style: italic;
+        color: $rojo;
+        font-weight: bold;
+        display: block;
+        font-size: 9rem;
+        text-align: center;
+        margin-top: -100px;
+        margin-bottom: -100px;
+    }
+    
+    .home__hero__h1--media {
+        font-family: $fuente;
+        font-style: italic;
+        color: transparent;
+        font-weight: bold;
+        display: block;
+        font-size: 9rem;
+        text-align: center;
+        -webkit-text-stroke: 1px $rojo;
+        opacity: 0.1;
+    }
+}

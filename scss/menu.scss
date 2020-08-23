@@ -1,0 +1,166 @@
+@import "variables.scss";
+
+/* BTN BURGER BLANCO */
+
+.menu-btn {
+    position: relative;
+    width: 80px;
+    height: 80px;
+    cursor: pointer;
+    transition: all .5s ease-in-out;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+    padding-left: 50px;
+}
+
+.menu-btn__burger {
+    width: 25px;
+    height: 3px;
+    background-color: $rojo;
+    border-radius: 5px;
+    transition: all 0.5s ease-in-out;
+} 
+
+.menu-btn__burger::before, .menu-btn__burger::after {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 3px;
+    background-color: $rojo;
+    border-radius: 5px;
+    transition: all 0.5s ease-in-out;
+}
+
+.menu-btn__burger::before {
+    transform: translateY(-10px);
+}
+
+.menu-btn__burger::after {
+    transform: translateY(10px);
+}
+
+.menu-btn.open .menu-btn__burger {
+    transform: translateX(-50px);
+    background: transparent;
+}
+
+.menu-btn.open .menu-btn__burger::before {
+    transform: rotate(45deg) translate(35px, -35px);
+}
+
+.menu-btn.open .menu-btn__burger::after {
+    transform: rotate(-45deg) translate(35px, 35px);
+}
+
+/* FIN BTN BURGER BLANCO */
+
+.navbar-dark .navbar-toggler{
+    border: none;
+}
+
+.nav-link {
+    font-family: $fuente;
+    padding-top: 10px;
+    color: $blanco;
+    text-align: center;
+}
+
+.navbar-nav {
+    background-color: none;
+}
+
+.buttonset {
+    padding-top: 30px;
+    padding-left: 30px;
+}
+
+.divLogo {
+    text-align: center;
+}
+
+.divEnlaces {
+    text-align: center;
+}
+
+.header__h4 {
+    font-family: $fuente;
+    font-weight: 500;
+    font-style: italic;
+    color: $blanco;
+}
+
+.separadorMenu {
+    width: 70%;
+    border: dashed 1px #E8E8E8;
+}
+
+.fa-instagram {
+    margin-top: 20px;
+}
+
+/* General styles for all menus */
+
+.cbp-spmenu {
+    background-color: $rojo;
+    padding-top: 50px;
+    padding-left: 20px;
+	position: fixed;
+}
+
+.cbp-spmenu a {
+	display: block;
+	color: $blanco;
+    font-size: 1rem;
+    font-family: $fuente;
+    font-weight: 700;
+    font-style: italic;
+	font-weight: 500;
+}
+
+.cbp-spmenu a:hover {
+    color: $rojosuave;
+    text-decoration: none;
+}
+
+/* Orientation-dependent styles for the content of the menu */
+
+.cbp-spmenu-vertical {
+	width: 240px;
+	height: 100%;
+	top: 0;
+	z-index: 1000;
+}
+
+.cbp-spmenu-vertical a {
+	padding: 1em;
+}
+
+.cbp-spmenu-right {
+	right: -240px;
+}
+
+.cbp-spmenu-right.cbp-spmenu-open {
+	right: 0px;
+}
+
+/* Push classes applied to the body */
+
+.cbp-spmenu-push {
+	overflow-x: hidden;
+	position: relative;
+	left: 0;
+}
+
+.cbp-spmenu-push-toleft {
+	left: -240px;
+}
+
+/* Transitions */
+
+.cbp-spmenu,
+.cbp-spmenu-push {
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+}

@@ -1,0 +1,218 @@
+@import "variables.scss";
+
+.home__about {
+    background-color: $rojo;
+    padding: 200px 50px 200px 50px !important;
+}
+
+.home__about__col1 {
+    margin-bottom: 30px;
+}
+
+.home__about__h2--01 {
+    font-family: $fuente;
+    font-size: 4rem;
+    font-weight: bold;
+    font-style: italic;
+    color: $blanco;
+    margin-bottom: -20px;
+}
+
+.home__about__h2--about {
+    font-family: $fuente;
+    font-size: 4rem;
+    font-weight: bold;
+    font-style: italic;
+    color: transparent;
+    -webkit-text-stroke: 1px $blanco;
+}
+
+.home__about__p {
+    font-family: $fuente;
+    color: $blanco;
+    font-size: 1.2rem;
+    font-weight: 300;
+    font-style: italic;
+    letter-spacing: 1px;
+}
+
+.home__about__h3 {
+    font-family: $fuente;
+    color: $blanco;
+    font-size: 1.6rem;
+    font-weight: 700;
+    font-style: italic;
+    letter-spacing: 1px;
+    margin-top: 40px;
+}
+
+/* MEDIA QUERIES */
+
+/* IPAD */
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+
+    .home__about {
+        background-color: $rojo;
+        padding: 200px 75px 200px 50px !important;
+    }
+
+    .home__about__h2--01 {
+        font-family: $fuente;
+        font-size: 4.5rem;
+        font-weight: bold;
+        font-style: italic;
+        color: $blanco;
+        margin-bottom: -20px;
+        text-align: right;
+
+    }
+
+    .home__about__h2--about {
+        font-family: $fuente;
+        font-size: 4.5rem;
+        font-weight: bold;
+        font-style: italic;
+        color: transparent;
+        -webkit-text-stroke: 1px $blanco;
+        text-align: right;
+    }
+
+    .home__about__col1 {
+        margin-right: 75px;
+    }
+
+    .home__about__p {
+        font-family: $fuente;
+        color: $blanco;
+        font-size: 1.2rem;
+        font-weight: 300;
+        font-style: italic;
+        letter-spacing: 1px;
+        text-align: left;
+    }
+    
+    .home__about__h3 {
+        font-family: $fuente;
+        color: $blanco;
+        font-size: 2rem;
+        font-weight: 700;
+        font-style: italic;
+        letter-spacing: 1px;
+        margin-top: 40px;
+        text-align: left;
+    }
+
+}
+
+/* COMPUTADORA CHICA */
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    .home__about {
+        background-color: $rojo;
+        padding: 200px 75px 200px 50px !important;
+    }
+
+    .home__about__h2--01 {
+        font-family: $fuente;
+        font-size: 4.5rem;
+        font-weight: bold;
+        font-style: italic;
+        color: $blanco;
+        margin-bottom: -20px;
+        text-align: right;
+
+    }
+
+    .home__about__h2--about {
+        font-family: $fuente;
+        font-size: 4.5rem;
+        font-weight: bold;
+        font-style: italic;
+        color: transparent;
+        -webkit-text-stroke: 1px $blanco;
+        text-align: right;
+    }
+
+    .home__about__col1 {
+        margin-right: 75px;
+    }
+
+    .home__about__p {
+        font-family: $fuente;
+        color: $blanco;
+        font-size: 1.2rem;
+        font-weight: 300;
+        font-style: italic;
+        letter-spacing: 1px;
+        text-align: left;
+    }
+    
+    .home__about__h3 {
+        font-family: $fuente;
+        color: $blanco;
+        font-size: 2rem;
+        font-weight: 700;
+        font-style: italic;
+        letter-spacing: 1px;
+        margin-top: 40px;
+        text-align: left;
+    }
+}
+
+/* COMPUTADORA GRANDE */
+
+@media (min-width: 1200px) {
+    .home__about {
+        background-color: $rojo;
+        padding: 200px 75px 200px 50px !important;
+    }
+
+    .home__about__h2--01 {
+        font-family: $fuente;
+        font-size: 5rem;
+        font-weight: bold;
+        font-style: italic;
+        color: $blanco;
+        margin-bottom: -20px;
+        text-align: right;
+
+    }
+
+    .home__about__h2--about {
+        font-family: $fuente;
+        font-size: 5rem;
+        font-weight: bold;
+        font-style: italic;
+        color: transparent;
+        -webkit-text-stroke: 1px $blanco;
+        text-align: right;
+    }
+
+    .home__about__col1 {
+        margin-right: 75px;
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+
+    .home__about__p {
+        font-family: $fuente;
+        color: $blanco;
+        font-size: 1.4rem;
+        font-weight: 300;
+        font-style: italic;
+        letter-spacing: 1px;
+        text-align: left;
+    }
+    
+    .home__about__h3 {
+        font-family: $fuente;
+        color: $blanco;
+        font-size: 2.5rem;
+        font-weight: 700;
+        font-style: italic;
+        letter-spacing: 1px;
+        margin-top: 40px;
+        text-align: left;
+    }
+}

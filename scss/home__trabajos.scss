@@ -1,0 +1,174 @@
+@import "variables.scss";
+
+.home__trabajos {
+    background-color: $blanco;
+    padding: 200px 50px 200px 50px !important;
+}
+
+.home__trabajos__col1 {
+    margin-bottom: 30px;
+    text-align: right;
+}
+
+.home__trabajos__h2--02 {
+    font-family: $fuente;
+    font-size: 4rem;
+    font-weight: bold;
+    font-style: italic;
+    color: $rojo;
+    margin-bottom: -20px;
+}
+
+.home__trabajos__h2--trabajos {
+    font-family: $fuente;
+    font-size: 4rem;
+    font-weight: bold;
+    font-style: italic;
+    color: transparent;
+    -webkit-text-stroke: 1px $rojo;
+}
+
+.home__trabajos__row {
+    margin-bottom: 30px;
+}
+
+/* PORTFOLIO */
+
+.home__trabajos__col2 {
+    padding: 0px;
+    margin: 0px;
+    text-align: left;
+}
+
+.home__trabajos__col2--seccion1 {
+    margin-bottom: 40px;
+}
+
+.home__trabajos__col2--seccion2 {
+    margin-bottom: 40px;
+}
+
+.imgTumenuonline {
+    width: 100%;
+}
+
+.home__trabajos__h3--portfolio {
+    font-family: $fuente;
+    font-size: 2rem;
+    font-weight: bold;
+    font-style: italic;
+    color: $gris;
+    margin-top: 20px;
+    margin-bottom: -5px;
+}
+
+.home__trabajos__p--portfolio {
+    font-family: $fuente;
+    font-size: 1.2rem;
+    font-weight: 500;
+    font-style: italic;
+    color: $gris;
+}
+
+/* FIN PORTFOLIO */
+
+.home__trabajos--logos {
+    height: 100px;
+    width: auto;
+}
+
+/* MEDIA QUERIES */
+
+/* IPAD */
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+
+    .home__trabajos__col1 {
+        text-align: right;
+    }
+
+    .home__trabajos__h2--02 {
+        font-family: $fuente;
+        font-size: 4.5rem;
+        font-weight: bold;
+        font-style: italic;
+        color: $rojo;
+        margin-bottom: -20px;
+    }
+    
+    .home__trabajos__h2--trabajos {
+        font-family: $fuente;
+        font-size: 4.5rem;
+        font-weight: bold;
+        font-style: italic;
+        color: transparent;
+        -webkit-text-stroke: 1px $rojo;
+    }
+
+}
+
+/* COMPUTADORA */
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+
+    .home__trabajos {
+        background-color: $blanco;
+        padding: 100px 50px 100px 50px !important;
+    }
+
+    .home__trabajos__col1 {
+        text-align: right;
+    }
+
+    .home__trabajos__h2--02 {
+        font-family: $fuente;
+        font-size: 4.5rem;
+        font-weight: bold;
+        font-style: italic;
+        color: $rojo;
+        margin-bottom: -20px;
+    }
+    
+    .home__trabajos__h2--trabajos {
+        font-family: $fuente;
+        font-size: 4.5rem;
+        font-weight: bold;
+        font-style: italic;
+        color: transparent;
+        -webkit-text-stroke: 1px $rojo;
+    }
+}
+
+/* COMPUTADORA GRANDE */
+
+@media (min-width: 1200px) {
+
+    .home__trabajos {
+        background-color: $blanco;
+        padding: 100px 50px 100px 50px !important;
+    }
+
+    .home__trabajos__col1 {
+        padding-right: 200px;
+        text-align: right;
+        padding-top: 50px;
+    }
+
+    .home__trabajos__h2--02 {
+        font-family: $fuente;
+        font-size: 5rem;
+        font-weight: bold;
+        font-style: italic;
+        color: $rojo;
+        margin-bottom: -20px;
+    }
+    
+    .home__trabajos__h2--trabajos {
+        font-family: $fuente;
+        font-size: 5rem;
+        font-weight: bold;
+        font-style: italic;
+        color: transparent;
+        -webkit-text-stroke: 1px $rojo;
+    }
+}

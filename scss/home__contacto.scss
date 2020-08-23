@@ -1,0 +1,199 @@
+@import "variables.scss";
+
+.home__contacto {
+    background-color: $rojo;
+    padding: 200px 50px 200px 50px !important;
+}
+
+.home__contacto__col1 {
+    margin-bottom: 20px;
+}
+
+.home__contacto__h2--02 {
+    font-family: $fuente;
+    font-size: 4rem;
+    font-weight: bold;
+    font-style: italic;
+    color: $blanco;
+    margin-bottom: -20px;
+}
+
+.home__contacto__h2--contacto {
+    font-family: $fuente;
+    font-size: 4rem;
+    font-weight: bold;
+    font-style: italic;
+    color: transparent;
+    -webkit-text-stroke: 1px $blanco;
+}
+
+.home__contacto__parrafo {
+    font-family: $fuente;
+    color: $blanco;
+    font-style: italic;
+    text-align: left;
+    font-size: 1rem;
+}
+
+.home__contacto__input {
+    border: solid 1px $blanco;
+    border-radius: 100px;
+    background-color: transparent;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 20px;
+    width: 90%;
+    margin-bottom: 10px;
+    color: $blanco;
+    font-family: $fuente;
+    font-size: 1rem;
+    font-style: italic;
+}
+
+.home__contacto__input::placeholder {
+    font-family: $fuente;
+    font-size: 1rem;
+    font-style: italic;
+    color: $blanco;
+}
+
+.home__contacto__mensaje {
+    border: solid 1px $blanco;
+    border-radius: 20px;
+    background-color: transparent;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 20px;
+    width: 90%;
+    margin-bottom: 10px;
+    color: $blanco;
+    font-family: $fuente;
+    font-size: 1rem;
+    font-style: italic;
+}
+
+.home__contacto__mensaje::placeholder {
+    font-family: $fuente;
+    font-size: 1rem;
+    font-style: italic;
+    color: $blanco;
+}
+
+#home__contacto__boton {
+    color: $blanco;
+    background-color: transparent;
+    border: solid 1px $blanco;
+    width: 100px;
+    border-radius: 100px;
+}
+
+/* MEDIA QUERIES */
+
+/* IPAD */
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+
+    .home__contacto__col1 {
+        margin-right: 75px;
+    }
+
+    .home__contacto__h2--02 {
+        font-family: $fuente;
+        font-size: 4.5rem;
+        font-weight: bold;
+        font-style: italic;
+        color: $blanco;
+        margin-bottom: -20px;
+        text-align: right;
+    }
+    
+    .home__contacto__h2--contacto {
+        font-family: $fuente;
+        font-size: 4.5rem;
+        font-weight: bold;
+        font-style: italic;
+        color: transparent;
+        -webkit-text-stroke: 1px $blanco;
+        text-align: right;
+    }
+
+    .home__contacto__parrafo {
+        font-family: $fuente;
+        color: $blanco;
+        font-style: italic;
+        text-align: right;
+        font-size: 1rem;
+    }
+}
+
+/* COMPUTADORA */
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    .home__contacto__col1 {
+        margin-right: 75px;
+    }
+
+    .home__contacto__h2--02 {
+        font-family: $fuente;
+        font-size: 4.5rem;
+        font-weight: bold;
+        font-style: italic;
+        color: $blanco;
+        margin-bottom: -20px;
+        text-align: right;
+    }
+    
+    .home__contacto__h2--contacto {
+        font-family: $fuente;
+        font-size: 4.5rem;
+        font-weight: bold;
+        font-style: italic;
+        color: transparent;
+        -webkit-text-stroke: 1px $blanco;
+        text-align: right;
+    }
+
+    .home__contacto__parrafo {
+        font-family: $fuente;
+        color: $blanco;
+        font-style: italic;
+        text-align: right;
+        font-size: 1rem;
+    }
+}
+
+/* COMPUTADORA GRANDE */
+
+@media (min-width: 1200px) {
+    .home__contacto__col1 {
+        margin-right: 100px;
+    }
+
+    .home__contacto__h2--02 {
+        font-family: $fuente;
+        font-size: 5rem;
+        font-weight: bold;
+        font-style: italic;
+        color: $blanco;
+        margin-bottom: -20px;
+        text-align: right;
+    }
+    
+    .home__contacto__h2--contacto {
+        font-family: $fuente;
+        font-size: 5rem;
+        font-weight: bold;
+        font-style: italic;
+        color: transparent;
+        -webkit-text-stroke: 1px $blanco;
+        text-align: right;
+    }
+
+    .home__contacto__parrafo {
+        font-family: $fuente;
+        color: $blanco;
+        font-style: italic;
+        text-align: right;
+        font-size: 1.2rem;
+    }
+}
