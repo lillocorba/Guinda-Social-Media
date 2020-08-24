@@ -669,7 +669,7 @@ body {
 
 .home__trabajos {
   background-color: white;
-  padding: 200px 50px 200px 50px !important; }
+  padding: 200px 20px 200px 20px !important; }
 
 .home__trabajos__col1 {
   margin-bottom: 30px;
@@ -701,10 +701,12 @@ body {
   text-align: left; }
 
 .home__trabajos__col2--seccion1 {
-  margin-bottom: 40px; }
+  margin-bottom: 40px;
+  padding: 0px; }
 
 .home__trabajos__col2--seccion2 {
-  margin-bottom: 40px; }
+  margin-bottom: 40px;
+  padding: 0px; }
 
 .imgTumenuonline {
   width: 100%; }
