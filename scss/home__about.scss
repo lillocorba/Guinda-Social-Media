@@ -44,6 +44,18 @@
     font-style: italic;
     letter-spacing: 1px;
     margin-top: 40px;
+    transition: content 2s ease-in;
+}
+
+.home__about__h3::after {
+    content: url(../imagenes/thunder.svg);
+    opacity: 0;
+    transition: all 0.5s ease-in;
+}
+
+.home__about__h3:hover::after {
+    content: url(../imagenes/thunder.svg);
+    opacity: 1;
 }
 
 /* MEDIA QUERIES */

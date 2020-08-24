@@ -57,9 +57,23 @@
     font-size: 2rem;
     font-weight: bold;
     font-style: italic;
-    color: $gris;
     margin-top: 20px;
     margin-bottom: -5px;
+    color: $gris;
+}
+
+.home__trabajos__h3--portfolio::before {
+    content: url(../imagenes/next.svg);
+    display: none;
+    margin-right: 7px;
+    transition: opacity 5s ease-in;
+    opacity: 0;
+}
+
+.home__trabajos__h3--portfolio:hover::before {
+    content: url(../imagenes/thunder-gris.svg);
+    opacity: 1;
+    display: inline;
 }
 
 .home__trabajos__p--portfolio {

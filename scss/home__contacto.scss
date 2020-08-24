@@ -81,10 +81,16 @@
 
 #home__contacto__boton {
     color: $blanco;
+    font-family: $fuente;
+    font-style: italic;
     background-color: transparent;
     border: solid 1px $blanco;
     width: 100px;
     border-radius: 100px;
+}
+
+#home__contacto__boton:hover {
+    font-weight: bold;
 }
 
 /* MEDIA QUERIES */
