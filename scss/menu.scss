@@ -1,165 +1,354 @@
 @import "variables.scss";
 
-/* BTN BURGER BLANCO */
-.menu-btn {
-    position: relative;
-    width: 80px;
-    height: 80px;
-    cursor: pointer;
-    transition: all .5s ease-in-out;
-    justify-content: center;
-    align-items: center;
-    padding-top: 50px;
-    padding-left: 50px;
-}
+    .menu {
+        display: flex;
+        flex-direction: row;
+        padding-right: 30px;
+        padding-top: 30px;
+        padding-left: 30px;
+        padding-bottom: 30px;
+    }
 
-.menu-btn__burger {
-    width: 25px;
-    height: 3px;
-    background-color: $rojo;
-    border-radius: 5px;
-    transition: all 0.5s ease-in-out;
-} 
+    .logoMenu {
+        font-family: $fuente;
+        color: $rojo;
+        font-size: 1.6rem;
+        font-weight: bold;
+        font-style: italic;
+    }
 
-.menu-btn__burger::before, .menu-btn__burger::after {
-    content: '';
-    position: absolute;
-    width: 20px;
-    height: 3px;
-    background-color: $rojo;
-    border-radius: 5px;
-    transition: all 0.5s ease-in-out;
-}
+    .nav-links {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin-left: auto;
+        list-style: none;
+    }
 
-.menu-btn__burger::before {
-    transform: translateY(-10px);
-}
+    ul li {
+        margin-right: 20px;
+        text-decoration: none;
+        margin-bottom: 50px;
+    }
+    
+    ul li a {
+        font-family: $fuente;
+        font-size: 1.4rem;
+        color: $rojo;
+        font-style: italic;
+    }
+    
+    ul li a:hover {
+        font-family: $fuente;
+        font-size: 1.4rem;
+        color: $rojo;
+        text-decoration: none;
+        font-weight: bold;
+        letter-spacing: 1px;
+    }
 
-.menu-btn__burger::after {
-    transform: translateY(10px);
-}
+    .burgerBtn {
+        display: none;
+    }
 
-.menu-btn.open .menu-btn__burger {
-    transform: translateX(-50px);
-    background: transparent;
-}
+    /* MEDIA QUERIES */
 
-.menu-btn.open .menu-btn__burger::before {
-    transform: rotate(45deg) translate(35px, -35px);
-}
+    /* IPAD */
 
-.menu-btn.open .menu-btn__burger::after {
-    transform: rotate(-45deg) translate(35px, 35px);
-}
+    @media (min-width: 768px) and (max-width: 991.98px) {
+        body {
+            overflow-x: hidden;
+        }
+        
+        .menu {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            padding-right: 30px;
+            padding-top: 30px;
+            padding-left: 30px;
+            padding-bottom: 30px;
+        }
+        
+        .nav-links {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-left: auto;
+            list-style: none;
+            position: absolute;
+            height: 100vh;
+            width: 100%;
+            top: 15vh;
+            right: 0;
+            background-color: $rojo;
+            z-index: 1;
+            transform: translate(100%);
+            transition: transform 0.5s ease-in;
+        }
+        
+        .liHome {
+            margin-right: 20px;
+            text-decoration: none;
+            margin-bottom: 50px;
+            transform: translate(500px);
+            transition: transform 1s ease-in-out;
+        }
 
-/* FIN BTN BURGER BLANCO */
+        .liAbout {
+            margin-right: 20px;
+            text-decoration: none;
+            margin-bottom: 50px;
+            transform: translate(500px);
+            transition: transform 1s ease-in-out 0.2s;
+        }
 
-.navbar-dark .navbar-toggler{
-    border: none;
-}
+        .liTrabajos {
+            margin-right: 20px;
+            text-decoration: none;
+            margin-bottom: 50px;
+            transform: translate(500px);
+            transition: transform 1s ease-in-out 0.4s;
+        }
 
-.nav-link {
-    font-family: $fuente;
-    padding-top: 10px;
-    color: $blanco;
-    text-align: center;
-}
+        .liContacto {
+            margin-right: 20px;
+            text-decoration: none;
+            margin-bottom: 50px;
+            transform: translate(500px);
+            transition: transform 1s ease-in-out 0.6s;
+        }
 
-.navbar-nav {
-    background-color: none;
-}
+        .active {
+            transform: translate(0%);
+        }
 
-.buttonset {
-    padding-top: 30px;
-    padding-left: 30px;
-}
+        
+        ul li a {
+            font-family: $fuente;
+            font-size: 1.4rem;
+            color: white;
+            font-style: italic;
+        }
+        
+        ul li a:hover {
+            font-family: $fuente;
+            font-size: 1.4rem;
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            letter-spacing: 5px;
+        }
+        
+        .logoMenu {
+            font-family: $fuente;
+            color: $rojo;
+            font-size: 1.6rem;
+            font-weight: bold;
+            font-style: italic;
+            margin-top: 10px;
+        }
+        
+        /* ICONO BURGER */
+        
+        .contenedorBurger {
+            display: flex;
+            margin-left: auto;
+        }
+        
+        .linea1 {
+            background-color: $rojo;
+            width: 25px;
+            height: 3px;
+            transition: transform 0.2s ease-in;
+        }
+        
+        .linea2 {
+            background-color: $rojo;
+            width: 25px;
+            height: 3px;
+            margin-top: 5px;
+            margin-bottom: 5px;
+            transition: opacity 0.2s ease-in;
+        }
+        
+        .linea3 {
+            background-color: $rojo;
+            width: 25px;
+            height: 3px;
+            transition: transform 0.2s ease-in;
+        }
 
-.divLogo {
-    text-align: center;
-}
+        .toggle .linea1  {
+            transform: rotate(-45deg) translate(-5px, 6px);
+        }
+        
+        .toggle .linea2 {
+            opacity: 0;
+        }
+        
+        .toggle .linea3 {
+            transform: rotate(45deg) translate(-5px, -6px);
+        }
+        
+        .burgerBtn {
+            display: block;
+            cursor: pointer;
+        }
 
-.divEnlaces {
-    text-align: center;
-}
+        .nav-active {
+            transform: translateX(0%);
+        }
+    }
 
-.header__h4 {
-    font-family: $fuente;
-    font-weight: 500;
-    font-style: italic;
-    color: $blanco;
-}
+    /* CELULAR */
 
-.separadorMenu {
-    width: 70%;
-    border: dashed 1px #E8E8E8;
-}
+    @media (max-width: 768px) {
+        body {
+            overflow-x: hidden;
+        }
+        
+        .menu {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            padding-right: 30px;
+            padding-top: 30px;
+            padding-left: 30px;
+            padding-bottom: 30px;
+        }
+        
+        .nav-links {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-left: auto;
+            list-style: none;
+            position: absolute;
+            height: 100vh;
+            width: 100%;
+            top: 15vh;
+            right: 0;
+            background-color: $rojo;
+            z-index: 1;
+            transform: translate(100%);
+            transition: transform 0.5s ease-in;
+        }
 
-.fa-instagram {
-    margin-top: 20px;
-}
+        .liHome {
+            margin-right: 20px;
+            text-decoration: none;
+            margin-bottom: 50px;
+            transform: translate(500px);
+            transition: transform 1s ease-in-out;
+        }
 
-/* General styles for all menus */
+        .liAbout {
+            margin-right: 20px;
+            text-decoration: none;
+            margin-bottom: 50px;
+            transform: translate(500px);
+            transition: transform 1s ease-in-out 0.2s;
+        }
 
-.cbp-spmenu {
-    background-color: $rojo;
-    padding-top: 50px;
-    padding-left: 20px;
-	position: fixed;
-}
+        .liTrabajos {
+            margin-right: 20px;
+            text-decoration: none;
+            margin-bottom: 50px;
+            transform: translate(500px);
+            transition: transform 1s ease-in-out 0.4s;
+        }
 
-.cbp-spmenu a {
-	display: block;
-	color: $blanco;
-    font-size: 1rem;
-    font-family: $fuente;
-    font-weight: 700;
-    font-style: italic;
-	font-weight: 500;
-}
+        .liContacto {
+            margin-right: 20px;
+            text-decoration: none;
+            margin-bottom: 50px;
+            transform: translate(500px);
+            transition: transform 1s ease-in-out 0.6s;
+        }
 
-.cbp-spmenu a:hover {
-    color: $rojosuave;
-    text-decoration: none;
-}
+        .active {
+            transform: translate(0%);
+        }
+        
+        ul li a {
+            font-family: $fuente;
+            font-size: 1.4rem;
+            color: white;
+            font-style: italic;
+        }
+        
+        ul li a:hover {
+            font-family: $fuente;
+            font-size: 1.4rem;
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            letter-spacing: 5px;
+        }
+        
+        .logoMenu {
+            font-family: $fuente;
+            color: $rojo;
+            font-size: 1.6rem;
+            font-weight: bold;
+            font-style: italic;
+            margin-top: 10px;
+        }
+        
+        /* ICONO BURGER */
+        
+        .contenedorBurger {
+            display: flex;
+            margin-left: auto;
+        }
+        
+        .linea1 {
+            background-color: $rojo;
+            width: 25px;
+            height: 3px;
+            transition: transform 0.2s ease-in;
+        }
+        
+        .linea2 {
+            background-color: $rojo;
+            width: 25px;
+            height: 3px;
+            margin-top: 5px;
+            margin-bottom: 5px;
+            transition: opacity 0.2s ease-in;
+        }
+        
+        .linea3 {
+            background-color: $rojo;
+            width: 25px;
+            height: 3px;
+            transition: transform 0.2s ease-in;
+        }
 
-/* Orientation-dependent styles for the content of the menu */
+        .toggle .linea1  {
+            transform: rotate(-45deg) translate(-5px, 6px);
+        }
+        
+        .toggle .linea2 {
+            opacity: 0;
+        }
+        
+        .toggle .linea3 {
+            transform: rotate(45deg) translate(-5px, -6px);
+        }
+        
+        .burgerBtn {
+            display: block;
+            cursor: pointer;
+        }
 
-.cbp-spmenu-vertical {
-	width: 240px;
-	height: 100%;
-	top: 0;
-	z-index: 1000;
-}
-
-.cbp-spmenu-vertical a {
-	padding: 1em;
-}
-
-.cbp-spmenu-right {
-	right: -240px;
-}
-
-.cbp-spmenu-right.cbp-spmenu-open {
-	right: 0px;
-}
-
-/* Push classes applied to the body */
-
-.cbp-spmenu-push {
-	overflow-x: hidden;
-	position: relative;
-	left: 0;
-}
-
-.cbp-spmenu-push-toleft {
-	left: -240px;
-}
-
-/* Transitions */
-
-.cbp-spmenu,
-.cbp-spmenu-push {
-	-webkit-transition: all 0.5s ease;
-	-moz-transition: all 0.5s ease;
-	transition: all 0.5s ease;
-}
+        .nav-active {
+            transform: translateX(0%);
+        }
+    }

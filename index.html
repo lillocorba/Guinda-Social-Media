@@ -16,24 +16,25 @@
 
     <!-- HEADER -->
 
-    <div class="container-fluid home__hero">
-        <header>
-            <div id="showRightPush" class="menu-btn">
-                <div class="menu-btn__burger"></div>
+    <div id="home" class="container-fluid home__hero">
+        <nav class="menu">
+            <div>
+                <h4 class="logoMenu">Guinda Social Media</h4>
             </div>
-            <nav class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-right" id="cbp-spmenu-s2">
-                <div class="divLogo">
-                    <h4 class="header__h4">Guinda Social Media</h4>
-                    <hr class="separadorMenu">
+            <ul class="nav-links">
+                <li class="linkMenu liHome"><a href="#home" class="linkHome">Home</a></li>
+                <li class="linkMenu liAbout"><a href="#about" class="linkAbout">About</a></li>
+                <li class="linkMenu liTrabajos"><a href="#trabajos" class="linkTrabajos">Trabajos</a></li>
+                <li class="linkMenu liContacto"><a href="#contacto" class="linkContacto">Contacto</a></li>
+            </ul>
+            <div class="contenedorBurger">
+                <div class="burgerBtn">
+                    <div class="linea1"></div>
+                    <div class="linea2"></div>
+                    <div class="linea3"></div>
                 </div>
-                <div class="divEnlaces">
-                    <a href="#">Inicio</a>
-                    <a href="#about">About</a>
-                    <a href="#trabajos">Trabajos</a>
-                    <a href="#contacto">Contacto</a>
-                </div>
-            </nav>
-        </header>
+            </div>
+        </nav>
 
         <!-- FIN HEADER -->
 
@@ -95,7 +96,7 @@
                 </div>
             </div>
             <div class="row justify-content-center align-content-center">
-                <div class="col-sm-12 col-md-6 col-lg-4 home__trabajos__col2">
+                <div class="col-sm-12 col-md-12 col-lg-4 home__trabajos__col2">
                     <div class="home__trabajos__col2--seccion1 imagenHover--Josephinas">
                         <img class="imgTumenuonline" src="imagenes/josephinascafe.png" alt="" data-aos="fade-right"
                             data-aos-duration="1000">
@@ -115,7 +116,7 @@
                         <p class="home__trabajos__p--Portfolio">Diseño Web / Social Media</p>
                     </div>
                 </div>
-                <div class="col-sm-12 col-md-6 col-lg-4 home__trabajos__col2">
+                <div class="col-sm-12 col-md-12 col-lg-4 home__trabajos__col2">
                     <div class="home__trabajos__col2--seccion1 imagenHover--Kawela">
                         <img class="imgTumenuonline" src="imagenes/kawela.png" alt="" data-aos="fade-right"
                             data-aos-duration="1000">
@@ -129,7 +130,7 @@
                         <p class="home__trabajos__p--Portfolio">Social Media / Generación de contenido</p>
                     </div>
                 </div>
-                <div class="col-sm-12 col-md-6 col-lg-4 home__trabajos__col3">
+                <div class="col-sm-12 col-md-12 col-lg-4 home__trabajos__col3">
                     <div class="home__trabajos__col2--seccion1 imagenHover--Hoboken">
                         <img class="imgTumenuonline" src="imagenes/hoboken.png" alt="" data-aos="fade-left"
                             data-aos-duration="1000">
@@ -215,10 +216,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
         integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
         crossorigin="anonymous"></script>
-    <script src="js/interaccion.js"></script>
     <script src="js/menu.js"></script>
-    <script src="js/classie.js"></script>
-    <script src="js/modernizr.custom.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
         AOS.init();

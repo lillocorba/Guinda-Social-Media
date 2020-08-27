@@ -1,30 +1,41 @@
-var menuLeft = document.getElementById('cbp-spmenu-s1'),
-    menuRight = document.getElementById('cbp-spmenu-s2'),
-    menuTop = document.getElementById('cbp-spmenu-s3'),
-    menuBottom = document.getElementById('cbp-spmenu-s4'),
-    showLeft = document.getElementById('showLeft'),
-    showRight = document.getElementById('showRight'),
-    showTop = document.getElementById('showTop'),
-    showBottom = document.getElementById('showBottom'),
-    showLeftPush = document.getElementById('showLeftPush'),
-    showRightPush = document.getElementById('showRightPush'),
-    body = document.body;
+var burger = document.querySelector('.burgerBtn')
+var nav = document.querySelector('.nav-links')
+var linkHome = document.querySelector('.linkHome')
+var linkAbout = document.querySelector('.linkAbout')
+var linkTrabajos = document.querySelector('.linkTrabajos')
+var linkContacto = document.querySelector('.linkContacto')
+var liActiveHome = document.querySelector('.liHome')
+var liActiveAbout = document.querySelector('.liAbout')
+var liActiveTrabajos = document.querySelector('.liTrabajos')
+var liActiveContacto = document.querySelector('.liContacto')
 
+burger.addEventListener('click', openMenu)
 
-showRightPush.onclick = function () {
-    classie.toggle(this, 'active');
-    classie.toggle(body, 'cbp-spmenu-push-toleft');
-    classie.toggle(menuRight, 'cbp-spmenu-open');
-    disableOther('showRightPush');
-};
-
-
-function disableOther(button) {
-    if (button !== 'showRightPush') {
-        classie.toggle(showRightPush, 'disabled');
-    }
-
-    if (button !== 'showLeftPush') {
-        classie.toggle(showLeftPush, 'disabled');
-    }
+function openMenu() {
+    nav.classList.toggle('nav-active')
+    burger.classList.toggle('toggle')
+    liActiveHome.classList.toggle('active')
+    liActiveAbout.classList.toggle('active')
+    liActiveTrabajos.classList.toggle('active')
+    liActiveContacto.classList.toggle('active')
 }
+
+linkHome.addEventListener('click', function closeMenu() {
+    nav.classList.remove('nav-active')
+    burger.classList.remove('toggle')
+})
+
+linkAbout.addEventListener('click', function closeMenu() {
+    nav.classList.remove('nav-active')
+    burger.classList.remove('toggle')
+})
+
+linkTrabajos.addEventListener('click', function closeMenu() {
+    nav.classList.remove('nav-active')
+    burger.classList.remove('toggle')
+})
+
+linkContacto.addEventListener('click', function closeMenu() {
+    nav.classList.remove('nav-active')
+    burger.classList.remove('toggle')
+})
