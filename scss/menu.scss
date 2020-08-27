@@ -1,5 +1,9 @@
 @import "variables.scss";
 
+    html {
+        scroll-behavior: smooth;
+    }
+
     .menu {
         display: flex;
         flex-direction: row;

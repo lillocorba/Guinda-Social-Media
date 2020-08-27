@@ -14,10 +14,10 @@ burger.addEventListener('click', openMenu)
 function openMenu() {
     nav.classList.toggle('nav-active')
     burger.classList.toggle('toggle')
-    liActiveHome.classList.toggle('active')
-    liActiveAbout.classList.toggle('active')
-    liActiveTrabajos.classList.toggle('active')
-    liActiveContacto.classList.toggle('active')
+    liActiveHome.classList.add('active')
+    liActiveAbout.classList.add('active')
+    liActiveTrabajos.classList.add('active')
+    liActiveContacto.classList.add('active')
 }
 
 linkHome.addEventListener('click', function closeMenu() {

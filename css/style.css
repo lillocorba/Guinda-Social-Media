@@ -45,6 +45,9 @@ body {
 body {
   font-size: 62,5%; }
 
+html {
+  scroll-behavior: smooth; }
+
 .menu {
   display: flex;
   flex-direction: row;
