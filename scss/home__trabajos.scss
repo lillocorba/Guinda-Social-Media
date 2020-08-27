@@ -37,188 +37,40 @@
 /* PORTFOLIO */
 
 .home__trabajos__col2 {
-    padding: 0px !important;
-    margin: 0px !important;
     text-align: left;
 }
 
 .home__trabajos__col3 {
-    padding: 0px !important;
-    margin: 0px !important;
     text-align: left;
 }
 
 .home__trabajos__col2--seccion1 {
-    margin: 0px;
-    padding: 0px;
     position: relative;
 }
 
 .home__trabajos__col2--seccion2 {
-    margin-bottom: 0px;
-    padding: 0px;
     position: relative;
 }
 
-.imagenHover--Josephinas::after {
-    content: 'Josephinas Cafe';
-    font-size: 3rem;
+.home__trabajos__h3--Portfolio {
     font-family: $fuente;
+    font-size: 1.6rem;
     font-style: italic;
-    display: flex;
-    color: white;
-    justify-content: center;
-    align-items: center;
-    background-color: black;
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    opacity: 0;
-    transition: opacity 0.5s ease-in-out;
+    font-weight: bold;
+    color: $gris;
+    text-align: center;
+    margin-top: 35px;
+    margin-bottom: 0px;
 }
 
-.imagenHover--Josephinas:hover::after {
-    opacity: 0.8;
-}
-
-.imagenHover--CestCool::after {
-    content: 'Cest Cool';
-    font-size: 3rem;
+.home__trabajos__p--Portfolio {
     font-family: $fuente;
+    font-size: 1rem;
     font-style: italic;
-    display: flex;
-    color: white;
-    justify-content: center;
-    align-items: center;
-    background-color: black;
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    opacity: 0;
-    transition: opacity 0.5s ease-in;
-}
-
-.imagenHover--CestCool:hover::after {
-    opacity: 0.8;
-}
-
-.imagenHover--Kawela::after {
-    content: 'Kawela Swimwear';
-    font-size: 3rem;
-    font-family: $fuente;
-    font-style: italic;
-    display: flex;
-    color: white;
-    justify-content: center;
-    align-items: center;
-    background-color: black;
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    opacity: 0;
-    transition: opacity 0.5s ease-in;
-}
-
-.imagenHover--Kawela:hover::after {
-    opacity: 0.8;
-}
-
-.imagenHover--StudioPadel::after {
-    content: 'Studio Padel';
-    font-size: 3rem;
-    font-family: $fuente;
-    font-style: italic;
-    display: flex;
-    color: white;
-    justify-content: center;
-    align-items: center;
-    background-color: black;
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    opacity: 0;
-    transition: opacity 0.5s ease-in;
-}
-
-.imagenHover--StudioPadel:hover::after {
-    opacity: 0.8;
-}
-
-.imagenHover--Hoboken::after {
-    content: 'Hoboken';
-    font-size: 3rem;
-    font-family: $fuente;
-    font-style: italic;
-    display: flex;
-    color: white;
-    justify-content: center;
-    align-items: center;
-    background-color: black;
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    opacity: 0;
-    transition: opacity 0.5s ease-in;
-}
-
-.imagenHover--Hoboken:hover::after {
-    opacity: 0.8;
-}
-
-.imagenHover--Ortopedia::after {
-    content: 'Ortopedia del Valle';
-    font-size: 3rem;
-    font-family: $fuente;
-    font-style: italic;
-    display: flex;
-    color: white;
-    justify-content: center;
-    align-items: center;
-    background-color: black;
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    opacity: 0;
-    transition: opacity 0.5s ease-in;
-}
-
-.imagenHover--Ortopedia:hover::after {
-    opacity: 0.8;
-}
-
-.imagenHover--TuMenu::after {
-    content: 'Tu Menu Online';
-    font-size: 3rem;
-    font-family: $fuente;
-    font-style: italic;
-    display: flex;
-    color: white;
-    justify-content: center;
-    align-items: center;
-    background-color: black;
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    opacity: 0;
-    transition: opacity 0.5s ease-in;
-}
-
-.imagenHover--TuMenu:hover::after {
-    opacity: 0.8;
+    font-weight: regular;
+    color: $gris;
+    text-align: center;
+    margin-bottom: 35px;
 }
 
 .imgTumenuonline {

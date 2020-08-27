@@ -11,3 +11,12 @@ menuBtn.addEventListener('click', () => {
         menuOpen = false;
     }
 })
+
+const btnCerrar = document.querySelector('#cerrarMenu')
+var menuResponsive = document.querySelector('.cbp-spmenu-s2')
+
+function cerrarMenu() {
+
+    menuResponsive.style.display = 'none'
+
+}
