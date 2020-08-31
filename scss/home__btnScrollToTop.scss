@@ -1,0 +1,15 @@
+@import "variables.scss";
+
+#btnTop {
+    background-color: transparent;
+    border: none;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    z-index: 1;
+    outline: none;
+}
+
+.bi-arrow-up-circle {
+    color: #E3E3E3;
+}

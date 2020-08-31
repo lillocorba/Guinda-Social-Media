@@ -313,12 +313,12 @@ ul li a:hover {
 body {
   font-size: 62,5%; }
 
-.home__hero {
+#home {
   background-color: white;
-  padding-bottom: 50px; }
+  height: 100vh; }
 
 .home__hero__col1 {
-  padding-top: 150px;
+  padding-top: 50px;
   margin-top: auto;
   margin-bottom: auto;
   z-index: 0; }
@@ -863,6 +863,28 @@ body {
 .imgTumenuonline {
   width: 100%; }
 
+.home__trabajos__a--Portfolio {
+  text-decoration: none;
+  font-family: rift, sans-serif;
+  font-size: 1.6rem;
+  font-style: italic;
+  font-weight: bold;
+  color: #676767;
+  text-align: center;
+  margin-top: 35px;
+  margin-bottom: 0px; }
+
+.home__trabajos__a--Portfolio:hover {
+  text-decoration: none;
+  font-family: rift, sans-serif;
+  font-size: 1.6rem;
+  font-style: italic;
+  font-weight: bold;
+  color: #FE403F;
+  text-align: center;
+  margin-top: 35px;
+  margin-bottom: 0px; }
+
 /* FIN PORTFOLIO */
 .home__trabajos--logos {
   height: 100px;
@@ -1325,6 +1347,23 @@ body {
     display: block;
     font-size: 6rem;
     text-align: center; } }
+
+/* COLORES */
+/* TIPOGRAFÍA */
+body {
+  font-size: 62,5%; }
+
+#btnTop {
+  background-color: transparent;
+  border: none;
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  z-index: 1;
+  outline: none; }
+
+.bi-arrow-up-circle {
+  color: #E3E3E3; }
 
 body {
   box-sizing: border-box; }
