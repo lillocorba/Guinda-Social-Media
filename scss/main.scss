@@ -1,5 +1,6 @@
 @import "scroll.scss", "variables.scss", "menu.scss", "home__hero.scss", "home__about.scss", "home__trabajos.scss", "home__contacto.scss", "home__footer.scss", "home__btnScrollToTop.scss";
 
-body {
-    box-sizing: border-box;
+html, body {
+    position: relative;
+    overflow-x: hidden;
 }
