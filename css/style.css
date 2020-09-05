@@ -575,7 +575,9 @@ body {
     font-size: 8rem;
     text-align: center;
     -webkit-text-stroke: 1px #FE403F;
-    opacity: 0.1; } }
+    opacity: 0.1; }
+  .home__hero__col2 {
+    padding-top: 200px; } }
 
 /* COMPUTADORA GRANDE */
 @media (min-width: 1200px) {
@@ -608,7 +610,9 @@ body {
     font-size: 9rem;
     text-align: center;
     -webkit-text-stroke: 1px #FE403F;
-    opacity: 0.1; } }
+    opacity: 0.1; }
+  .home__hero__col2 {
+    padding-top: 150px; } }
 
 /* COLORES */
 /* TIPOGRAFÍA */
@@ -616,7 +620,10 @@ body {
   font-size: 62,5%; }
 
 .home__about {
-  background: linear-gradient(-90deg, #ff4747 0%, #ff3b3b 100%);
+  background-image: url(../imagenes/bg-about.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   padding: 200px 50px 200px 50px !important; }
 
 .home__about__col1 {
@@ -959,7 +966,10 @@ body {
   font-size: 62,5%; }
 
 .home__contacto {
-  background: linear-gradient(90deg, #ff4747 0%, #ff3b3b 100%);
+  background-image: url(../imagenes/bg-about.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   padding: 200px 50px 200px 50px !important; }
 
 .home__contacto__col1 {
@@ -1000,7 +1010,8 @@ body {
   color: white;
   font-family: rift, sans-serif;
   font-size: 1rem;
-  font-style: italic; }
+  font-style: italic;
+  outline: none; }
 
 .home__contacto__input::placeholder {
   font-family: rift, sans-serif;
@@ -1020,7 +1031,8 @@ body {
   color: white;
   font-family: rift, sans-serif;
   font-size: 1rem;
-  font-style: italic; }
+  font-style: italic;
+  outline: none; }
 
 .home__contacto__mensaje::placeholder {
   font-family: rift, sans-serif;

@@ -1,7 +1,10 @@
 @import "variables.scss";
 
 .home__about {
-    background: linear-gradient(-90deg, rgba(255,71,71,1) 0%, rgba(255,59,59,1) 100%);
+    background-image: url(../imagenes/bg-about.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     padding: 200px 50px 200px 50px !important;
 }
 
