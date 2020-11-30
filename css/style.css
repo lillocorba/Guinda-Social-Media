@@ -315,7 +315,7 @@ body {
   padding-bottom: 50px; }
 
 .home__hero__col1 {
-  padding-top: 150px;
+  padding-top: 200px;
   margin-top: auto;
   margin-bottom: auto;
   z-index: 0; }
@@ -513,6 +513,8 @@ body {
 /* MEDIA QUERIES */
 /* IPAD */
 @media (min-width: 768px) and (max-width: 991.98px) {
+  .home__hero__col1 {
+    padding-top: 300px; }
   .home__hero__h1--social {
     font-family: rift, sans-serif;
     font-style: italic;
@@ -546,6 +548,8 @@ body {
 
 /* COMPUTADORA */
 @media (min-width: 992px) and (max-width: 1199.98px) {
+  .home__hero__col1 {
+    padding-top: 100px; }
   .home__hero__h1--social {
     font-family: rift, sans-serif;
     font-style: italic;
@@ -581,6 +585,8 @@ body {
 
 /* COMPUTADORA GRANDE */
 @media (min-width: 1200px) {
+  .home__hero__col1 {
+    padding-top: 50px; }
   .home__hero__h1--social {
     font-family: rift, sans-serif;
     font-style: italic;
